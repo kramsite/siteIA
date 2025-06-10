@@ -7,6 +7,17 @@
     <link rel="stylesheet" href="estrutura.css">
 </head>
 <body>
+    
+    <header>
+        <nav>
+        <ul>
+        <li><a href="estufa.php">Efeito estufa</a></li>
+        <li><a href="mudancas.php">Mudanças climaticas</a></li>
+        <li><a href="causas.php">Causas</a></li>
+        <li><a href="acoes.php">Ações</a></li>
+        </ul>
+        </nav>
+    </header>
 
     <h1>Rede Neural Simplificada: A Máquina Que Reage!</h1>
 
@@ -72,7 +83,7 @@
         ?>
 
     </div>
-
+<main>
     <div class="explanation">
         <h2>Como a Máquina "Decidiu" Este Tomate:</h2>
         
@@ -85,6 +96,7 @@
             Este exemplo se aproxima mais de como uma rede neural "funciona" na prática (a parte de "propagar para frente"), onde as entradas influenciam diretamente a saída através dos cálculos em cada camada. A diferença para uma rede neural de verdade é que as "regras" (pesos e a função de ativação) seriam **aprendidas automaticamente** através de muitos exemplos, em vez de serem fixadas no código.
         </p>
     </div>
+</main>
 
 </body>
 </html>
