@@ -14,7 +14,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if ($usuario === $usuario_correto && $senha === $senha_correta) {
         $_SESSION['logado'] = true;
         $_SESSION['usuario'] = $usuario;
-        header("Location: inicio.php");
+        header("Location: ../entrada/entrada.php");
         exit();
     } else {
         $erro = "Usuário ou senha incorretos!";
@@ -30,7 +30,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <style>
         body {
             font-family: 'Segoe UI';
-            background: url('img/ia.jpg') no-repeat center center/cover;
+            background: url('../img/ia.jpg') no-repeat center center/cover;
             display: flex;
             justify-content: center;
             align-items: center;
