@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rede Neural Simplificada: Decisão do Tomate (Variável)</title>
     <link rel="stylesheet" href="estrutura.css">
 </head>
 <body>
@@ -18,8 +17,6 @@
         </ul>
         </nav>
     </header>
-
-    <h1>Rede Neural Simplificada: A Máquina Que Reage!</h1>
 
 
     <form class="input-form" method="GET" action="">
@@ -83,7 +80,7 @@
         ?>
 
     </div>
-<main>
+
     <div class="explanation">
         <h2>Como a Máquina "Decidiu" Este Tomate:</h2>
         
@@ -96,7 +93,6 @@
             Este exemplo se aproxima mais de como uma rede neural "funciona" na prática (a parte de "propagar para frente"), onde as entradas influenciam diretamente a saída através dos cálculos em cada camada. A diferença para uma rede neural de verdade é que as "regras" (pesos e a função de ativação) seriam **aprendidas automaticamente** através de muitos exemplos, em vez de serem fixadas no código.
         </p>
     </div>
-</main>
 
 </body>
 </html>
