@@ -124,7 +124,7 @@
                         $cumprimento = "Boa noite!";
                     }
 
-                    echo "<p>".$cumprimento." Agora são **" . date('H:i') . "** de **" . date('d/m/Y') . "**.</p>";
+                    echo "<p>".$cumprimento." Agora são " . date('H:i') . " de " . date('d/m/Y') . ".</p>";
                 ?>
             </div>
         </header>
