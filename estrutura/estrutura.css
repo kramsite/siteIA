@@ -1,58 +1,77 @@
-
+html, body {
+    margin: 0;
+    padding: 0;
+}
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     min-height: 100vh;
     background: url('../img/ia.jpg') no-repeat center center/cover;
     margin: 0;
-    padding: 20px;
     box-sizing: border-box;
     color: #333;
 }
 
 header {
-  background-color: rgb(21, 41, 108);;
-  height: 40px; /* aumentei um pouco para mais espaço */
+  background-color: #15296c;
+  height: 60px;
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 3px 6px rgba(0,0,0,0.2);
-  padding: 0 20px; /* para dar espaçamento horizontal */
-  position: fixed; /* fixar no topo */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  padding: 0 30px;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
   z-index: 1000;
+  transition: transform 0.3s ease-in-out;
+}
+
+header.hidden {
+  transform: translateY(-100%);
 }
 
 nav ul {
   display: flex;
-  gap: 2rem;
+  gap: 2.5rem;
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
 nav ul li a {
-  font-size: 1.1rem;
+  position: relative;
+  font-size: 1.15rem;
   color: white;
   text-decoration: none;
   font-weight: 600;
-  padding: 10px 15px;
-  border-radius: 4px;
-  transition: background 0.3s ease;
-  display: flex;
-  align-items: center;
-  height: 100%;
+  letter-spacing: 0.5px;
+  padding: 10px 5px;
+  transition: color 0.3s ease;
+}
+
+nav ul li a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 0%;
+  background-color: #ffffff;
+  transition: width 0.3s ease;
 }
 
 nav ul li a:hover {
-  background-color: #2d6a4f;
-  color: #aaffaa;
+  color: #bfcbf3;
+}
+
+nav ul li a:hover::after {
+  width: 100%;
 }
 
 
@@ -63,17 +82,27 @@ h1 {
     text-align: center;
 }
 
+.container {
+  max-width: 1050px;
+  width: 100%;
+  padding: 30px 20px;
+  box-sizing: border-box;
+}
+
 .input-form {
+    max-width: 900px;
     background-color: #ffffff;
-    padding: 25px 150px;
-    border-radius: 12px;
+    padding: 30px 40px;
+    border-radius: 15px;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
-    display: flex;
+    margin-top: 60px;
+    display: grid;
     flex-wrap: wrap;
-    gap: 20px;
-    align-items: flex-end;
+    gap: 20px 30px;
+    align-items: end;
     justify-content: center;
+    text-align: left;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
 }
 
 .input-group {
@@ -126,13 +155,14 @@ h1 {
     display: flex;
     max-width: 900px;
     gap: 50px;
-    padding: 40px 110px;
+    padding: 30px 40px;
     background-color: #ffffff;
     border-radius: 15px;
-    margin-top: 50px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
     align-items: flex-start;
-    margin-top: 20px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    text-align: center;
 }
 
 .layer {
@@ -147,7 +177,7 @@ h1 {
     font-size: 1.4em;
     font-weight: bold;
     color: #34495e;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     border-bottom: 3px solid #3498db;
     padding-bottom: 8px;
     text-align: center;
@@ -201,15 +231,17 @@ h1 {
 }
 
 .explanation {
-    margin-top: 40px;
+    margin-top: 10px;
     max-width: 900px;
     background-color: #ffffff;
-    padding: 30px 110px;
+    padding: 30px 40px;
     border-radius: 15px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-    line-height: 1.7;
-    font-size: 1.1em;
+    line-height: 1.8;
+    font-size: 1.125em;
     text-align: justify;
+    letter-spacing: 0.3px;
+
 }
 
 .explanation h2 {
@@ -221,5 +253,34 @@ h1 {
 }
 
 .explanation p {
-    margin-bottom: 15px;
+    margin-bottom: 14px;
+    text-indent: 1.2em;
 }
+
+footer {
+    background: #15296c;
+    color: #d9fcd9;
+    font-size: 0.9rem;
+    text-align: center;
+    padding: 1rem 1rem;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 50px;
+    width: 100%;
+
+    /* remova margin-top para evitar espaçamento excessivo */
+}
+
+.footer-content {
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-content p {
+    margin: 0;
+    font-weight: 400;
+    letter-spacing: 0.3px;
+}
+

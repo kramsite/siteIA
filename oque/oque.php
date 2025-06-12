@@ -4,108 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Desvendando as Redes Neurais na Inteligência Artificial</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Poppins', sans-serif;
-            line-height: 1.8;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f7f6;
-            color: #333;
-        }
-        .container {
-            max-width: 900px;
-            margin: 40px auto;
-            background-color: #ffffff;
-            padding: 35px 50px;
-            border-radius: 15px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-        }
-        header {
-            text-align: center;
-            margin-bottom: 40px;
-            padding-bottom: 20px;
-            border-bottom: 2px solid #e0e0e0;
-        }
-        header h1 {
-            color: #2c3e50;
-            font-size: 2.8em;
-            margin-bottom: 10px;
-            line-height: 1.2;
-        }
-        header p {
-            color: #666;
-            font-size: 1.2em;
-        }
-        section {
-            margin-bottom: 40px;
-        }
-        h2 {
-            color: #34495e;
-            font-size: 1.8em;
-            margin-bottom: 20px;
-            border-bottom: 2px solid #a8dadc;
-            padding-bottom: 8px;
-        }
-        h3 {
-            color: #457b9d;
-            font-size: 1.4em;
-            margin-bottom: 15px;
-            border-left: 4px solid #a8dadc;
-            padding-left: 10px;
-        }
-        p {
-            margin-bottom: 15px;
-            text-align: justify;
-        }
-        ul {
-            list-style-type: disc;
-            margin-left: 25px;
-            margin-bottom: 15px;
-        }
-        ul li {
-            margin-bottom: 8px;
-        }
-        .highlight {
-            background-color: #e0f7fa;
-            padding: 15px;
-            border-radius: 10px;
-            border-left: 5px solid #00bcd4;
-            margin: 20px 0;
-        }
-        .analogy {
-            background-color: #f0f4f7;
-            padding: 20px;
-            border-radius: 10px;
-            border-left: 5px solid #4CAF50;
-            margin: 25px 0;
-        }
-        .analogy strong {
-            color: #2e7d32;
-        }
-        footer {
-            text-align: center;
-            margin-top: 50px;
-            padding-top: 20px;
-            border-top: 1px solid #e0e0e0;
-            color: #777;
-            font-size: 0.9em;
-        }
-        .php-info {
-            background-color: #fffde7;
-            padding: 15px;
-            border-radius: 8px;
-            border-left: 4px solid #ffeb3b;
-            margin-top: 25px;
-            font-size: 0.95em;
-            color: #5d4037;
-        }
-    </style>
+    <link rel="stylesheet" href="oque.css">
 </head>
 <body>
+    <header>
+        <nav>
+            <ul>
+            <li><a href="../estrutura/estrutura.php">Estrutura</a></li>
+            <li><a href="../tipos/tipos.php">Tipos</a></li>
+            <li><a href="causas.php">Causas</a></li>
+            <li><a href="acoes.php">Ações</a></li>
+         </ul>
+        </nav>
+    </header>
+
     <div class="container">
-        <header>
             <h1>Desvendando as Redes Neurais na Inteligência Artificial</h1>
             <p>Compreenda como essas "células cerebrais digitais" permitem que as máquinas aprendam e tomem decisões inteligentes.</p>
             <div class="php-info">
@@ -127,7 +40,6 @@
                     echo "<p>".$cumprimento." Agora são " . date('H:i') . " de " . date('d/m/Y') . ".</p>";
                 ?>
             </div>
-        </header>
 
         <section>
             <h2>O que é Redes Neurais?</h2>
@@ -205,9 +117,32 @@
             </div>
         </section>
 
-        <footer>
-            <p>&copy; 2025 - Explicação Simplificada de Redes Neurais. Todos os direitos reservados.</p>
-        </footer>
     </div>
+
+    <footer>
+        <div class="footer-content">
+          <p>© 2025 Grupo 1. Desenvolvido para fins educacionais</p>
+        </div>
+    </footer>
+
+
+    <script>
+  let lastScrollTop = 0;
+  const header = document.querySelector("header");
+
+  window.addEventListener("scroll", () => {
+    const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+
+    if (currentScroll > lastScrollTop) {
+      // Rolando para baixo → esconde
+      header.classList.add("hidden");
+    } else {
+      // Rolando para cima → mostra
+      header.classList.remove("hidden");
+    }
+
+    lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // Evita valores negativos
+  });
+</script>
 </body>
 </html>
