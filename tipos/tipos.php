@@ -16,7 +16,6 @@
             <li><a href="causas.php">Causas</a></li>
             <li><a href="acoes.php">Ações</a></li>
          </ul>
-
         </nav>
     </header>
 
