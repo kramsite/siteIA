@@ -127,6 +127,8 @@
 
     lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // Evita valores negativos
   });
+
+  
 </script>
 </body>
 </html>
