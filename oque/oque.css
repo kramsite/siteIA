@@ -91,15 +91,15 @@ h2 {
   color: #34495e;
   font-size: 1.8em;
   margin-bottom: 20px;
-  border-bottom: 2px solid #a8dadc;
+  border-bottom: 2px solid #a8c6dc;
   padding-bottom: 8px;
 }
 
 h3 {
-  color: #457b9d;
+  color: #34495e;
   font-size: 1.4em;
   margin-bottom: 15px;
-  border-left: 4px solid #a8dadc;
+  border-left: 4px solid #a8c6dc;
   padding-left: 10px;
 }
 
@@ -122,10 +122,10 @@ ul li {
 
 /* DESTAQUES */
 .highlight {
-  background-color: #e0f7fa;
+  background-color: #f0f4f7;
   padding: 15px 20px;
   border-radius: 10px;
-  border-left: 5px solid #00bcd4;
+  border-left: 5px solid #4c60af;
   margin: 25px 0;
 }
 
@@ -133,12 +133,12 @@ ul li {
   background-color: #f0f4f7;
   padding: 20px;
   border-radius: 10px;
-  border-left: 5px solid #4CAF50;
+  border-left: 5px solid #4c60af;
   margin: 30px 0;
 }
 
 .analogy strong {
-  color: #2e7d32;
+  color: #2e4c7d;
 }
 
 .php-info {
@@ -154,7 +154,7 @@ ul li {
 /* FOOTER */
 footer {
   background: #15296c;
-    color: #d9fcd9;
+    color: #ffffff;
     font-size: 0.9rem;
     text-align: center;
     padding: 1rem 1rem;

@@ -43,14 +43,10 @@
 
         <section>
             <h2>O que é Redes Neurais?</h2>
-            <p>
-                Dentro do campo da IA, existem várias formas de tentar alcançar essa "inteligência". Uma das formas mais poderosas e fascinantes são as Redes Neurais Artificiais (RNAs).
-            </p>
-            <p>
-                Elas são um tipo de modelo de computação que foi inspirado na forma como o nosso próprio cérebro funciona. Nosso cérebro tem bilhões de células chamadas "neurônios" que se conectam e trocam informações para que possamos pensar, aprender e agir. As Redes Neurais tentam simular isso no computador.
-            </p>
+            <p>Uma rede neural é um tipo de inteligência artificial que imita o jeito como o cérebro humano aprende e toma decisões.</p>
+            <p>Ela serve para que o computador consiga reconhecer padrões e aprender com exemplos, como identificar rostos, entender falas, traduzir idiomas ou prever comportamentos — sem precisar ser programado passo a passo para cada situação.</p>
             <div class="analogy">
-                <strong>Se a IA é o "sonho", as Redes Neurais são como um dos "ingredientes secretos" para fazer esse sonho virar realidade.</strong>
+                <strong>Se a inteligência artificial é o objetivo, as redes neurais são como o caminho que ensina a máquina a pensar por si mesma.</strong>
             </div>
         </section>
 
@@ -93,29 +89,17 @@
 
         <section>
             <h2>Por Que as Redes Neurais São Tão Importantes na IA?</h2>
+            <p>As redes neurais são tão importantes porque elas permitem que as máquinas aprendam sozinhas a partir de exemplos — algo que antes só os humanos conseguiam fazer.</p>
+            <h3>Em Outras Palavras</h3>
+            <p>Elas são o que tornam possível que sistemas de inteligência artificial:</p>
             <ul>
-                <li>Aprendizado: Elas conseguem aprender com os dados sem serem programadas passo a passo para cada tarefa.</li>
-                <li>Reconhecimento de Padrões: São excelentes em encontrar padrões complexos em grandes volumes de dados (imagens, voz, texto).</li>
-                <li>Adaptação: Podem se adaptar e melhorar seu desempenho à medida que recebem mais dados e experiência.</li>
-                <li>Lidar com Dados Incompletos/Barulhentos: Conseguem extrair informações úteis mesmo de dados que não são perfeitos.</li>
+                <li>Reconheçam rostos e vozes</li>
+                <li>Entendam idiomas</li>
+                <li>Prevejam comportamentos</li>
+                <li>Dirijam carros sozinhos</li>
+                <li>Criem textos, imagens ou músicas</li>
             </ul>
-        </section>
-
-        <section>
-            <h2>Onde Vemos Redes Neurais no Dia a Dia?</h2>
-            <p>As Redes Neurais estão por trás de muitas tecnologias que usamos constantemente, como:</p>
-            <ul>
-                <li>Reconhecimento Facial: Desbloqueio de celular, organização de fotos.</li>
-                <li>Assistentes de Voz (Siri, Alexa): Entendem o que você fala e respondem.</li>
-                <li>Carros Autônomos: Ajudam o carro a "ver" a estrada, pedestres e outros veículos.</li>
-                <li>Sistemas de Recomendação: Sugestões de filmes (Netflix), músicas (Spotify), produtos (Amazon).</li>
-                <li>Tradução Automática: Google Tradutor.</li>
-                <li>Detecção de Fraudes: Em bancos e transações online.</li>
-            </ul>
-            <div class="analogy">
-                <strong>As Redes Neurais são os "músculos" que fazem muitos dos "superpoderes" da IA funcionarem.</strong>
-            </div>
-        </section>
+       
 
     </div>
 
