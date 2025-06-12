@@ -118,11 +118,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <?php if ($erro): ?>
                 <div class="erro"><?= $erro ?></div>
             <?php endif; ?>
-            <form method="post">
+            <form action="../entrada/processa_login.php" method="post">
                 <input type="text" name="usuario" placeholder="Usuário" required autocomplete="username">
                 <input type="password" name="senha" placeholder="Senha" required autocomplete="current-password">
+                <p><a href="../cadastro/cadastro.php">Cadastre-se</a></p>
                 <button type="submit">Entrar</button>
             </form>
+
         </div>
     </div>
 </body>
