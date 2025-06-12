@@ -82,79 +82,45 @@ nav ul li a:hover::after {
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
 
-/* SEÇÕES */
-section {
-  margin-bottom: 40px;
-}
+ h1 {
+      text-align: center;
+      color: #15296c;
+      margin-bottom: 40px;
+    }
 
-h2 {
-  color: #34495e;
-  font-size: 1.8em;
-  margin-bottom: 20px;
-  border-bottom: 2px solid #a8c6dc;
-  padding-bottom: 8px;
-}
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+    }
 
-h3 {
-  color: #34495e;
-  font-size: 1.4em;
-  margin-bottom: 15px;
-  border-left: 4px solid #a8c6dc;
-  padding-left: 10px;
-}
+    .card {
+      background-color: #f0f4f7;
+      border-left: 5px solid #15296c;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s ease;
+    }
 
-p {
-  margin-bottom: 15px;
-  text-align: justify;
-  line-height: 1.6;
-  font-size: 1rem;
-}
+    .card:hover {
+      transform: translateY(-5px);
+    }
 
-ul {
-  list-style-type: disc;
-  margin-left: 25px;
-  margin-bottom: 15px;
-}
+    .card h2 {
+      color: #457b9d;
+      font-size: 1.4em;
+      margin-bottom: 10px;
+    }
 
-ul li {
-  margin-bottom: 8px;
-}
+    .card p {
+      font-size: 0.98em;
+      text-align: justify;
+    }
 
-/* DESTAQUES */
-.highlight {
-  background-color: #f0f4f7;
-  padding: 15px 20px;
-  border-radius: 10px;
-  border-left: 5px solid #4c60af;
-  margin: 25px 0;
-}
-
-.analogy {
-  background-color: #f0f4f7;
-  padding: 20px;
-  border-radius: 10px;
-  border-left: 5px solid #4c60af;
-  margin: 30px 0;
-}
-
-.analogy strong {
-  color: #2e4c7d;
-}
-
-.php-info {
-  background-color: #fffde7;
-  padding: 15px 20px;
-  border-radius: 8px;
-  border-left: 4px solid #ffeb3b;
-  margin-top: 25px;
-  font-size: 0.95em;
-  color: #5d4037;
-}
-
-/* FOOTER */
 footer {
   background: #15296c;
-    color: #ffffff;
+    color: #d9fcd9;
     font-size: 0.9rem;
     text-align: center;
     padding: 1rem 1rem;
