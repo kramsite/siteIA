@@ -10,10 +10,10 @@
     <header>
         <nav>
         <ul>
-        <li><a href="../estrutura/estrutura.php">Estrutura</a></li>
+        <li><a href="../oque/oque.php">O que é?</a></li>
         <li><a href="../tipos/tipos.php">Tipos</a></li>
-        <li><a href="../aplicações.php">Aplicações</a></li>
-        <li><a href="acoes.php">Ações</a></li>
+        <li><a href="../aplicações/aplicações.php">Aplicações</a></li>
+
 
         </ul>
         </nav>
