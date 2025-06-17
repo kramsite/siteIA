@@ -1,0 +1,4 @@
+rafaellagomes|rafaellagomes@gmail.com|1993-04-02|Feminino|$2y$10$3oxR.Y/RRfzE0HuEOuOcY.WBmXm4w.T7c.GnV6PlnrCkijz/gunxq
+Higor|higor@gmail.com|1993-02-04|Masculino|$2y$10$FSqDzNVaXRvibc40p9Pk6OGTNEWJ/g2PcOQ7UKanMFnCZbDLGdN0a
+higor@gmail.com|$2y$10$55zJiFsEqpn2bOgaQEy.4O7oaorjsSoY2TyAZ9vE.rik3kt4bko9m|nome=Higor|nascimento=1993-02-04|cadastrado_em=2025-06-17 15:48:17
+rafaella@gmail.com|$2y$10$ETtQHq9C1oyF/ssJYZWW0.rJTB5zn7/8V7wOoCj4Xf5pUw0UpDCia|nome=rafaella|nascimento=1998-02-05|cadastrado_em=2025-06-17 15:54:32

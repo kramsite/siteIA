@@ -13,7 +13,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     if ($usuario === $usuario_correto && $senha === $senha_correta) {
         $_SESSION['logado'] = true;
-        $_SESSION['usuario'] = $usuario;
+        $_SESSION['nome'] = $usuario;
         header("Location: ../entrada/entrada.php");
         exit();
     } else {
@@ -93,6 +93,22 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             background-color: rgb(21, 41, 108);
         }
 
+        .cadastro-link {
+            margin-top: 8px;
+        }
+
+        .cadastro-link a {
+            color: #ffffff;
+            font-size: 14px;
+            text-decoration: underline;
+            transition: color 0.3s ease;
+        }
+
+        .cadastro-link a:hover {
+            color: #d1e0ff;
+            text-decoration: none;
+        }
+
         .erro {
             background-color: #ffe0e0;
             color: #d8000c;
@@ -119,9 +135,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <div class="erro"><?= $erro ?></div>
             <?php endif; ?>
             <form action="../entrada/processa_login.php" method="post">
-                <input type="text" name="usuario" placeholder="Usuário" required autocomplete="username">
+                <input type="text" name="nome" placeholder="Usuário" required autocomplete="username">
                 <input type="password" name="senha" placeholder="Senha" required autocomplete="current-password">
-                <p><a href="../cadastro/cadastro.php">Cadastre-se</a></p>
+                <p class="cadastro-link"><a href="../cadastro/cadastro.php">Cadastre-se</a></p>
                 <button type="submit">Entrar</button>
             </form>
 
