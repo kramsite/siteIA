@@ -1,27 +1,3 @@
-<?php
-session_start();
-
-$erro = "";
-
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $usuario = $_POST['usuario'];
-    $senha = $_POST['senha'];
-
-    // Usuário e senha pré-definidos
-    $usuario_correto = 'admin';
-    $senha_correta = '1234';
-
-    if ($usuario === $usuario_correto && $senha === $senha_correta) {
-        $_SESSION['logado'] = true;
-        $_SESSION['nome'] = $usuario;
-        header("Location: ../entrada/entrada.php");
-        exit();
-    } else {
-        $erro = "Usuário ou senha incorretos!";
-    } 
-}
-?>
-
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -145,3 +121,4 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     </div>
 </body>
 </html>
+
