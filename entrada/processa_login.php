@@ -1,34 +1,41 @@
 <?php
-if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-    $nome = trim($_POST['nome'] ?? '');
+session_start();
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $email = trim($_POST['email'] ?? '');
     $senha = trim($_POST['senha'] ?? '');
-    $data_nascimento = trim($_POST['data_nascimento'] ?? '');
-    $data_cadastro = date("Y-m-d H:i:s");
 
-    if (!filter_var($email, FILTER_VALIDATE_EMAIL) || empty($senha) || empty($nome) || empty($data_nascimento)) {
-        echo "Por favor, preencha todos os campos corretamente.";
-        exit;
-    }
+    if (filter_var($email, FILTER_VALIDATE_EMAIL) && !empty($senha)) {
+        $arquivo = __DIR__ . '/../cadastro/usuarios.txt';
 
-    $arquivo = __DIR__ . '/usuarios.txt';
-    $usuarios = file_exists($arquivo) ? file($arquivo, FILE_IGNORE_NEW_LINES) : [];
-
-    foreach ($usuarios as $linha) {
-        list($emailSalvo) = explode('|', $linha);
-        if ($emailSalvo === $email) {
-            echo "Este e-mail já está cadastrado.";
+        if (!file_exists($arquivo)) {
+            echo "Nenhum usuário cadastrado.";
             exit;
         }
+
+        $usuarios = file($arquivo, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
+
+        $encontrado = false;
+        foreach ($usuarios as $linha) {
+            $partes = explode('|', $linha);
+            if (count($partes) < 2) {
+                continue; // ignora linhas mal formatadas
+            }
+            list($emailSalvo, $senhaHash) = $partes;
+
+            if ($email === $emailSalvo && password ($senha, $senhaHash)) {
+                $_SESSION['usuario'] = $email;
+                header('Location: entrada.php');
+                exit;
+            }
+        }
+
+        echo "E-mail ou senha incorretos.";
+        exit;
+    } else {
+        echo "Preencha corretamente o e-mail e a senha.";
+        exit;
     }
-
-    $senha_hash = password_hash($senha, PASSWORD_DEFAULT);
-    $linha = $email . '|' . $senha_hash . '|nome=' . $nome . '|nascimento=' . $data_nascimento . '|cadastrado_em=' . $data_cadastro . "\n";
-    file_put_contents($arquivo, $linha, FILE_APPEND);
-
-    echo "<p>Cadastro realizado com sucesso! Redirecionando para login...</p>";
-    header('refresh:3;url=../entrada/index.php');
-    exit;
 } else {
     echo "Acesso inválido.";
     exit;
