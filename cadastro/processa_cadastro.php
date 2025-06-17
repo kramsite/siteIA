@@ -27,7 +27,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     file_put_contents($arquivo, $linha, FILE_APPEND);
 
     echo "<p>Cadastro realizado com sucesso! Redirecionando para login...</p>";
-    header('refresh:3;url=../entrada/index.php');
+    header('refresh:3;url=../entrada/entrar.php');
     exit;
 } else {
     echo "Acesso inválido.";
