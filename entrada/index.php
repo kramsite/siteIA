@@ -102,7 +102,7 @@
         <div class="login-container">
             <h2>Bem-vindo de volta</h2>
 
-            <form action="processa_login.php" method="post">
+            <form action="../oque/oque.php" method="post">
                 <input type="text" name="nome" placeholder="Usuário" required autocomplete="username">
                 <input type="password" name="senha" placeholder="Senha" required autocomplete="current-password">
                 <p class="cadastro-link"><a href="../cadastro/cadastro.php">Cadastre-se</a></p>
