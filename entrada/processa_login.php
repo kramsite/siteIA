@@ -6,7 +6,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $senha = trim($_POST['senha'] ?? '');
 
     if (filter_var($email, FILTER_VALIDATE_EMAIL) && !empty($senha)) {
-        $arquivo = __DIR__ . '/../cadastro/usuarios.txt';
+        $arquivo = __DIR__ . '../cadastro/usuarios.txt';
 
         if (!file_exists($arquivo)) {
             echo "Nenhum usuário cadastrado.";
@@ -23,7 +23,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             }
             list($emailSalvo, $senhaHash) = $partes;
 
-            if ($email === $emailSalvo && password ($senha, $senhaHash)) {
+            if ($email === $emailSalvo && password_verify ($senha, $senhaHash)) {
                 $_SESSION['usuario'] = $email;
                 header('Location: entrada.php');
                 exit;

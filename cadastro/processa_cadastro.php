@@ -11,7 +11,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         exit;
     }
 
-    $arquivo = __DIR__ . 'usuarios.txt';
+    $arquivo = __DIR__ . '/usuarios.txt';
     $usuarios = file_exists($arquivo) ? file($arquivo, FILE_IGNORE_NEW_LINES) : [];
 
     foreach ($usuarios as $linha) {
@@ -23,7 +23,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     }
 
     $senha_hash = password_hash($senha, PASSWORD_DEFAULT);
-    $linha = $email . '|senha=' . $senha . '|nome=' . $nome . '|nascimento=' . $data_nascimento . '|cadastrado_em=' . $data_cadastro . "\n";
+    $linha = $email . '|senha=' . $senha_hash . '|nome=' . $nome . '|nascimento=' . $data_nascimento . '|cadastrado_em=' . $data_cadastro . "\n";
     file_put_contents($arquivo, $linha, FILE_APPEND);
 
     echo "<p>Cadastro realizado com sucesso! Redirecionando para login...</p>";

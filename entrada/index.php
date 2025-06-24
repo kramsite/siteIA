@@ -100,7 +100,7 @@
 <body>
     <div class="wrapper">
         <div class="login-container">
-            <h2>Bem-vindo de volta</h2>
+            <h2>Seja Bem-vindo!</h2>
 
             <form action="../oque/oque.php" method="post">
                 <input type="text" name="nome" placeholder="Usuário" required autocomplete="username">

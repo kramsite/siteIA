@@ -1,0 +1,2 @@
+rafaella@gmail.com|senha=$2y$10$ry0uDaU6iBBY49rSs9TZzObNZAOg4YlyAQ7OhucOmFPdgZeFTSiPq|nome=rafaella|nascimento=2008-09-22|cadastrado_em=2025-06-24 14:40:48
+ralley@gmail.com|senha=$2y$10$8XYQzJA8ktPjuwWFSx6gYeT3Tro45RMj4wOcOyRx.6mF8X8mG7Ppe|nome=ralley|nascimento=32009-01-20|cadastrado_em=2025-06-24 14:45:03
