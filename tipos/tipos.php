@@ -11,11 +11,11 @@
     <header>
         <nav>
             <ul>
-                <li><a href="../estrutura/estrutura.php">Estrutura</a></li>
-                <li><a href="../tipos/tipos.php">Tipos</a></li>
-                <li><a href="../aplicações.php">Aplicações</a></li>
-                <li><a href="acoes.php">Ações</a></li>
-            </ul>
+            <li><a href="../estrutura/estrutura.php">Estrutura</a></li>
+            <li><a href="../oque/oque.php">O que é?</a></li>
+            <li><a href="../aplicações/aplicações.php">Aplicações</a></li>
+
+         </ul>
         </nav>
     </header>
 
@@ -28,11 +28,11 @@
         $redes_neurais = [
             [
                 'titulo' => 'Perceptron Multicamadas (MLP)',
-                'intro' => 'A **MLP** é a rede neural mais simples, com camadas de neurônios que se conectam em sequência.',
+                'intro' => 'A <strong>MLP</strong> é a rede neural mais simples, com camadas de neurônios que se conectam em sequência.',
                 'detalhes' => [
                     'Como funciona' => 'Ela recebe dados, processa em camadas "escondidas" e entrega um resultado. Ela aprende ajustando a importância das conexões (pesos) para acertar as respostas.',
-                    'Para que serve' => 'Ótima para tarefas diretas como **classificar e-mails** (spam ou não), **prever preços** ou encontrar padrões em números. É um bom começo para a IA.',
-                    'Exemplo Prático' => 'Imagine um sistema que decide se um **e-mail é spam ou não**. A MLP analisa palavras, remetente e estrutura do e-mail. Ela aprende que certas palavras ou padrões geralmente indicam spam e, com base nisso, classifica o e-mail como "spam" ou "não spam".'
+                    'Para que serve' => 'Ótima para tarefas diretas como <strong>classificar e-mails</strong> (spam ou não), <strong>prever preços</strong> ou encontrar padrões em números. É um bom começo para a IA.',
+                    'Exemplo Prático' => 'Imagine um sistema que decide se um <strong>e-mail é spam ou não</strong>. A MLP analisa palavras, remetente e estrutura do e-mail. Ela aprende que certas palavras ou padrões geralmente indicam spam e, com base nisso, classifica o e-mail como "spam" ou "não spam".'
                 ],
                 'link_interativo' => [
                     'texto' => 'Experimente o TensorFlow Playground',
@@ -41,11 +41,11 @@
             ],
             [
                 'titulo' => 'Redes Convolucionais (CNN)',
-                'intro' => 'As **CNNs** são especialistas em "ver". Elas trabalham com imagens e vídeos, imitando como nossos olhos funcionam.',
+                'intro' => 'As <strong>CNNs</strong> são especialistas em "ver". Elas trabalham com imagens e vídeos, imitando como nossos olhos funcionam.',
                 'detalhes' => [
                     'Como funciona' => 'Usam "filtros" para achar partes importantes na imagem (bordas, texturas). Depois, juntam essas partes para reconhecer objetos completos.',
-                    'Para que serve' => 'Essenciais para **reconhecimento facial**, **carros autônomos**, **diagnóstico médico por imagem** (achar problemas em exames) e filtros de fotos.',
-                    'Exemplo Prático' => 'Pense em um **carro autônomo**. Uma CNN consegue identificar em tempo real se a imagem da câmera mostra um pedestre, um sinal de "pare" ou outro veículo, diferenciando-os com base nas características visuais que ela aprendeu a reconhecer.'
+                    'Para que serve' => 'Essenciais para <strong>reconhecimento facial</strong>, <strong>carros autônomos</strong>, <strong>diagnóstico médico por imagem</strong> (achar problemas em exames) e filtros de fotos.',
+                    'Exemplo Prático' => 'Pense em um <strong>carro autônomo</strong>. Uma CNN consegue identificar em tempo real se a imagem da câmera mostra um pedestre, um sinal de "pare" ou outro veículo, diferenciando-os com base nas características visuais que ela aprendeu a reconhecer.'
                 ],
                 'link_interativo' => [
                     'texto' => 'Explore o CNN Explainer interativo',
@@ -54,11 +54,11 @@
             ],
             [
                 'titulo' => 'Redes Recorrentes (RNN)',
-                'intro' => 'As **RNNs** têm "memória". São perfeitas para dados em sequência, como texto ou áudio, pois lembram do que veio antes.',
+                'intro' => 'As <strong>RNNs</strong> têm "memória". São perfeitas para dados em sequência, como texto ou áudio, pois lembram do que veio antes.',
                 'detalhes' => [
                     'Como funciona' => 'Ao processar uma sequência (tipo uma frase), ela usa o que já leu para entender o contexto do que está lendo agora, como se tivesse um histórico.',
-                    'Para que serve' => 'Ideais para **previsão de séries do tempo** (bolsa, clima), **reconhecimento de voz** e **geração de música**, onde a ordem é vital.',
-                    'Exemplo Prático' => 'Num **reconhecimento de voz**, a RNN ouve as palavras uma a uma. Para entender a frase "Eu _amo_ chocolate", ela usa o que ouviu antes ("Eu amo") para prever ou confirmar que a próxima palavra fará sentido no contexto, mesmo com sotaques ou ruídos.'
+                    'Para que serve' => 'Ideais para <strong>previsão de séries do tempo</strong> (bolsa, clima), <strong>reconhecimento de voz</strong> e <strong>geração de música</strong>, onde a ordem é vital.',
+                    'Exemplo Prático' => 'Num <strong>reconhecimento de voz</strong>, a RNN ouve as palavras uma a uma. Para entender a frase "Eu _amo_ chocolate", ela usa o que ouviu antes ("Eu amo") para prever ou confirmar que a próxima palavra fará sentido no contexto, mesmo com sotaques ou ruídos.'
                 ],
                 'link_interativo' => [
                     'texto' => 'Gere texto no estilo Shakespeare com uma RNN',
