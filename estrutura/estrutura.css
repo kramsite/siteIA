@@ -1,79 +1,76 @@
 html, body {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
     min-height: 100vh;
     background: url('../img/ia.jpg') no-repeat center center/cover;
-    margin: 0;
-    box-sizing: border-box;
+    background-attachment: fixed;
     color: #333;
 }
 
+/* HEADER */
 header {
-  background-color: #15296c;
-  height: 60px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
-  padding: 0 30px;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 1000;
-  transition: transform 0.3s ease-in-out;
+    background-color: #15296c;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+    padding: 0 30px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    transition: transform 0.3s ease-in-out;
 }
 
 header.hidden {
-  transform: translateY(-100%);
+    transform: translateY(-100%);
 }
 
 nav ul {
-  display: flex;
-  gap: 2.5rem;
-  list-style: none;
-  margin: 0;
-  padding: 0;
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 nav ul li a {
-  position: relative;
-  font-size: 1.15rem;
-  color: white;
-  text-decoration: none;
-  font-weight: 600;
-  letter-spacing: 0.5px;
-  padding: 10px 5px;
-  transition: color 0.3s ease;
+    position: relative;
+    font-size: 1.1rem;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 8px 4px;
+    transition: color 0.3s ease;
 }
 
 nav ul li a::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  height: 2px;
-  width: 0%;
-  background-color: #ffffff;
-  transition: width 0.3s ease;
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 0%;
+    background-color: #ffffff;
+    transition: width 0.3s ease;
 }
 
 nav ul li a:hover {
-  color: #bfcbf3;
+    color: #bfcbf3;
 }
 
 nav ul li a:hover::after {
-  width: 100%;
+    width: 100%;
 }
-
 
 h1 {
     color: #ffffff;
@@ -87,6 +84,15 @@ h1 {
   width: 100%;
   padding: 30px 20px;
   box-sizing: border-box;
+  align-items: center;
+}
+
+.container,
+.input-form,
+.network-container,
+.explanation {
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .input-form {

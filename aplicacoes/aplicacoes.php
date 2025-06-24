@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Aplicações de Redes Neurais</title>
-  <link rel="stylesheet" href="aplicações.css">
+  <link rel="stylesheet" href="aplicacoes.css">
   <style>
     /* Adiciona um estilo para centralizar o vídeo */
     .video-container {
@@ -22,15 +22,8 @@
       <ul>
         <li><a href="../estrutura/estrutura.php">Estrutura</a></li>
         <li><a href="../tipos/tipos.php">Tipos</a></li>
-<<<<<<< HEAD:aplicações/aplicacoes.php
-        <li><a href="../aplicacoes.php">Aplicações</a></li>
-        <li><a href="acoes.php">Ações</a></li>
-      </ul>
-=======
         <li><a href="../oque/oque.php">O que é?</a></li>
-
-      </ul>s
->>>>>>> c56b2cce3478e0085a037387f08694facb359d4d:aplicações/aplicações.php
+      </ul>
     </nav>
   </header>
 

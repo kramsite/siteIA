@@ -10,16 +10,10 @@
     <header>
         <nav>
             <ul>
-            <li><a href="../estrutura/estrutura.php">Estrutura</a></li>
-            <li><a href="../tipos/tipos.php">Tipos</a></li>
-<<<<<<< HEAD
-            <li><a href="../aplicacoes.php">Aplicações</a></li>
-            <li><a href="acoes.php">Ações</a></li>
-=======
-            <li><a href="../aplicações/aplicações.php">Aplicações</a></li>
-
->>>>>>> c56b2cce3478e0085a037387f08694facb359d4d
-         </ul>
+             <li><a href="../estrutura/estrutura.php">Estrutura</a></li>
+             <li><a href="../tipos/tipos.php">Tipos</a></li>
+             <li><a href="../aplicacoes/aplicacoes.php">Aplicações</a></li>
+            </ul>
         </nav>
     </header>
 

@@ -11,11 +11,10 @@
     <header>
         <nav>
             <ul>
-            <li><a href="../estrutura/estrutura.php">Estrutura</a></li>
-            <li><a href="../oque/oque.php">O que é?</a></li>
-            <li><a href="../aplicações/aplicações.php">Aplicações</a></li>
-
-         </ul>
+             <li><a href="../estrutura/estrutura.php">Estrutura</a></li>
+             <li><a href="../oque/oque.php">O que é?</a></li>
+             <li><a href="../aplicacoes/aplicacoes.php">Aplicações</a></li>
+            </ul>
         </nav>
     </header>
 
